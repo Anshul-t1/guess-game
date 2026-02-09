@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshul's Guess Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="app">
+        <h2>Guess the Number</h2>
+        <p>Between 1 and 100</p>
+
+        <form method="POST">
+            <input type="number" name="guess" placeholder="Enter number" required>
+            <button type="submit">Guess</button>
+        </form>
+
+        <p class="result">{{ message }}</p>
+    </div>
+</body>
+</html>
